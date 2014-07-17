@@ -1,0 +1,38 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cj.nan.koans</groupId>
+	<artifactId>koans-runner</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		 <target.jdk>1.6</target.jdk>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.0.2</version>
+					<configuration>
+						<source>${target.jdk}</source>
+						<target>${target.jdk}</target>
+					</configuration>
+				</plugin>
+			</plugins>
+	</build>
+</project>
